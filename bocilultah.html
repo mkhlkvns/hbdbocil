@@ -1,0 +1,111 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+
+                
+              </style>
+                        </head>
+                        <body>
+                            <audio id="bgm" autoplay>
+  <source src="..." type="audio/mpeg">
+</audio>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading...</title>
+  <style>
+    body {
+      background: #a8e6a3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #2c4a3d;
+      text-align: center;
+    }
+    .wrapper {
+      max-width: 300px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #5cb85c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #4cae4c;
+    }
+    .loader {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="https://i.imgur.com/7rqY5UE.gif" width="130" />
+    <div class="loader">Klik tombol di bawah ya! 🎧💚</div>
+    <button class="btn" id="playBtn">Play & Lanjutkan</button>
+  </div>
+
+  <audio id="bgm">
+    <source src="https://docs.google.com/uc?export=download&id=1s_-do-Q_H-xAy3QzsHATeL0ErR6n3VVY" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const bgm = document.getElementById("bgm");
+    const btn = document.getElementById("playBtn");
+
+    btn.addEventListener("click", () => {
+      // Mainkan audio
+      bgm.volume = 0.4;
+      bgm.play().then(() => {
+        // Setelah audio berhasil diputar, redirect
+        setTimeout(() => {
+          window.location.href = "https://hbdbocil.my.canva.site/";
+        }, 1200);
+      }).catch(e => {
+        console.error("Gagal memutar audio:", e);
+        // Tetap redirect meski audio gagal (opsional)
+        window.location.href = "https://hbdbocil.my.canva.site/";
+      });
+
+      // Sembunyikan tombol atau tampilkan loading
+      btn.textContent = "Loading...";
+      btn.disabled = true;
+    });
+  </script>
+</body>
+</html>
+
+<audio id="bgm" autoplay muted></audio>
+
+<source src="https://mkhlkvns.github.io/your-repo/music.mp3" type="audio/mpeg">
+
+
+
+              <script>
+                              bgm.muted = false;
+
+
+              </script>
+                        </body>
+                        </html>
+                    
